@@ -1,5 +1,5 @@
-import lab2
-A = lab2.n 
+import Quiz1import
+A = Quiz1import.n 
 
 while A > 0:
     A = A - 1
