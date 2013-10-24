@@ -13,7 +13,7 @@ print fib(6)
 
 
 
-series = 'sum'
+series = raw_input("Enter string ")
 n =6
 
 def lab3fib():
