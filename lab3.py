@@ -6,7 +6,7 @@ def fib(n):
 # def testfib(n):
 #       for i in range(n+1):
 #              print ('fib of, i, '-', fib(i)')
-                
+#                
 
 print fib(6) 
 
