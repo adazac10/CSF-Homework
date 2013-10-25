@@ -1,0 +1,62 @@
+Name: Zach Adam
+Evergreen Login: adazac10
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+GC-content: 0.4302926293 for sample 1
+
+Problem 3:
+
+commenting out linenum = 0 causes an error for me
+File "dna_analysis.py, line 40, in <module>
+    linenum = linenum +1
+NameError: name 'linenum is not defined
+
+I belive if you commeneted out gc_count = 0 it would
+also say not defined and thus not work
+
+Problem 4:
+
+sample_1
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+
+small
+GC-content: 0.3
+AT-content: 0.7
+
+Collaboration:
+
+I helped Houng mostly during class on lab3, no
+one worked with on this
+
+Reflection:
+
+I learned that variables are very important
+and that I can search by strings and then list
+how many I find. I am enjoying programming, only
+thing that I wish I knew is the math, that is
+hurting, but programming wise I'm good. My advice
+for others is go over the code and step by step
+see what is going on, then copy paste to edit 
+working code to meet your needs.
+
+I don't understand the Diff Checker, what am I 
+checking the difference on? Not sure where my 
+output from  dna_analysis goes.
