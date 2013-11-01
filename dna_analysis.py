@@ -72,7 +72,7 @@ gc_content = float(gc_count) / total_count
 ################################################
 # Total nucleotides seen so far.
 total_count2 = 0
-# Number of G and C nucleotides seen so far.
+# Number of A and T nucleotides seen so far.
 at_count = 0
 
 
@@ -83,11 +83,11 @@ for bp in seq:
 
     # next, if the bp is a T or a A,
     if bp == 'T' or bp == 'A':
-        # increment the count of at
+        # increment the count of a T
         at_count = at_count + 1
 
 
-# divide the gc_count by the total_count
+# divide the at_count by the total_count
 at_content = float(at_count) / total_count2
 
 #####################################################
@@ -116,14 +116,46 @@ for bp in seq:
         c_count = c_count + 1
 
 
-# divide the gc_count by the total_count
+# divide the a,t,g,c_count by the total_count
 a_content = float(a_count) / total_count3
 t_content = float(t_count) / total_count3
 g_content = float(g_count) / total_count3
 c_content = float(c_count) / total_count3
 
 ####################################################
+sumcount = 0
+test = 0
 
+sumcount = a_content + t_content + g_content + c_content
+
+## (G+C)/(A+T+G+C)
+test = gc_content / sumcount 
+
+####################################################
+ATGC = 0
+
+ATGC = at_content / gc_content
+
+####################################################
+
+HighGC = 0
+LowGC = 0
+HighGC = sumcount * .60 
+LowGC = sumcount * .40
+
+###Test to see what 60% and 40% are###
+# print 'HighGC:', HighGC
+# print 'LowGC:', LowGC
+
+if gc_content > HighGC:
+    print 'high GC content'
+elif gc_content < LowGC:
+    print 'low GC content'
+else:
+    print 'moderate GC content'
+
+
+####################################################
 
 # Print the answer
 print 'GC-content:', gc_content
@@ -137,3 +169,14 @@ print 'A-content:', a_content
 print 'T-content:', t_content
 print 'G-content:', g_content
 print 'C-content:', c_content
+
+# Print the Answer
+print 'A,T,G,C-content total:', sumcount
+print 'total count variable:', total_count
+print 'total count2 variable:', total_count2
+print 'total count3 variable:', total_count3
+print 'length of sequence varialbe:', len(seq)
+print 'test to see if GC is correct:', test
+
+# Print the Answer
+print 'At/GC ratio:', ATGC
