@@ -37,7 +37,28 @@ def state_edges(election_result_rows):
     """
     #TODO: Implement this function
     
-    pass
+    
+    state_advantages = {} #sets a variable and defines it as a dictionary
+                            #Why do we need a dictionary?
+                
+    for rows1 in election_result_rows: #runs only amount of times of rows
+                                    #What is row in this line of code? Is it
+                                    #a temaporary varible or one already 
+                                    #established
+                                    
+
+        edge = row_to_edge(row) #sets a varialbe to the math function
+                                #Why set a function to a variable?
+
+        State = (rows1['State']) #picks the row
+                                #Why set the row position to a variable?
+
+        state_advantages[State] = edge #puts the row together with the math
+                                        #How does the function variable 
+                                        #interactic with the row varaible?
+
+    return state_advantages    # returns the answer
+    
 
 
 ################################################################################
