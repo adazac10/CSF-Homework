@@ -1,0 +1,9 @@
+In order to receive credit, please do the following:
+
+* Commit and upload your project code, including instructions on how to run it.
+* Get the Battleship badge for CodeAcademy Python course.
+* Write and submit self-evals and faculty evals for me, Neal, and Sherri online at my.evergreen.edu
+
+Please do this by 5pm tomorrow (Friday).
+
+Thanks, Paul
